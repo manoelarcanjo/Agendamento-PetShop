@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>AGENDAMENTO DE BANHO E TOSA</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="img/logo.svg" alt="logo do pet shop">
+        </div>
+        <h1 class="title">AGENDAMENTO DE BANHO E TOSA</h1>
+    </header>
+
+    <section id="sec-form">
+        <div id="form">
+            <form onsubmit="addPet()">
+                <label for="petName">Nome do Pet*</label>
+                <input autocomplete="off" type="text" required id="fname" name="petName" placeholder="Billy">
+                <label for="petBreed">Raça*</label>
+                <input autocomplete="off" type="text" required id="fbreed" name="petBreed" placeholder="Golden">
+                <label for="petOwner">Dono do Pet*</label>
+                <input autocomplete="off" type="text" required id="fowner" name="petOwner" placeholder="Manoel">
+                <label for="phone">Telefone*</label>
+                <input autocomplete="off" type="text" required id="fphone" name="phone" placeholder=" 00 0000 - 0000">
+                <button class="submit-button" type="submit" id="button"> Agendar Pet </button>
+            </form>
+        </div>
+        <div>
+            <table id="dataTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Pet</th>
+                    <th>Raça</th>
+                    <th>Ver Detalhes</th>
+                    <th>Remover</th>
+
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <script src="main.js"> </script>
+</body>
+
+
+</html>
